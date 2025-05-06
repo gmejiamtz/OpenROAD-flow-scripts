@@ -301,7 +301,8 @@ __common_setup()
         if [ ! -z "${USE_OPENROAD_APP_LATEST+x}" ] || [ "${OPENROAD_APP_BRANCH}" != "master" ]; then
                 echo -n "[INFO FLW-0004] Updating OpenROAD app to the HEAD"
                 echo "  of ${OPENROAD_APP_REMOTE}/${OPENROAD_APP_BRANCH}."
-                __update_openroad_app_latest
+                echo "Currently SKIPPING pulling the latest version."
+                # __update_openroad_app_latest
         fi
 }
 
